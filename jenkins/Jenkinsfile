@@ -21,9 +21,9 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
-        stage('Complete') {
+        stage('Branch Complete') {
             steps {
-                echo 'Job Completed!'
+                echo 'Branch Completed!'
             }
         }
     }
